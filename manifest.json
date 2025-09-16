@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Google Drive Video/Audio Downloader",
+    "version": "1.0",
+    "description": "By SSSN",
+    "permissions": [
+        "tabs",
+        "scripting",
+        "downloads",
+        "webRequest"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "Drive Downloader"
+    },
+    "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

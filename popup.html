@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        body {
+            width: 300px;
+            padding: 15px;
+            font-family: Arial, sans-serif;
+        }
+        .row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            gap: 10px;
+        }
+        select {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 8px 15px;
+            background-color: #4285f4;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+        button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+        .status {
+            margin-top: 10px;
+            font-size: 12px;
+            text-align: center;
+        }
+        .cache-button {
+            background-color: #f44336;
+            margin-top: 10px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h3>Download From Google Drive</h3>
+    
+
+    <div class="row">
+        <select id="videoQuality">
+            <option value="134">Video 360p</option>
+            <option value="135">Video 480p</option>
+            <option value="136">Video 720p</option>
+            <option value="137">Video 1080p</option>
+        </select>
+        <button id="downloadVideo">Download Video</button>
+    </div>
+    
+
+    <div class="row">
+        <select id="audioQuality">
+            <option value="140">Audio 128k</option>
+            <option value="141">Audio 256k</option>
+
+        </select>
+        <button id="downloadAudio">Download Audio</button>
+    </div>
+    
+
+    <div class="row">
+        <button id="removeCache" class="cache-button">Remove Cache</button>
+    </div>
+    
+    <div class="status" id="status"></div>
+    
+    <script src="popup.js"></script>
+</body>
+</html>
